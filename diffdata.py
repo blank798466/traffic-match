@@ -123,8 +123,7 @@ if __name__ == '__main__':
     # print len(time1)
     # print len(time2)
     # print height1
-    # print height2
-    
+    # print height2 
     '''
     print difftime_in
     print difftime_out
