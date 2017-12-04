@@ -9,3 +9,4 @@ csvdata.py  # 获取csv中五轴车入口出口的时间序列数据和重量序列数据
 diffdata.py  # 获取入站出站时间差数组和重量差数组以及序号序列数据
 evlfunc.py  # 获取入站和出站的评价函数，获取入站出站的优先级数组
 connectingcar.py  # 获取匹配车辆，观察区别
+main.py  # 主运行函数
