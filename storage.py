@@ -25,7 +25,7 @@ def opencph_in(zzs):  # list  zzs车轴为5
 def opencph_out(zzs):  # list  zzs车轴为5
 	cph_out = list()  # 出站数据的车牌号列表
 	with open(u'F:\\研究生之\\20171127\\_2015_6_2015_6_7_out.csv','rb') as csvfile:#打开一个文件
-		reader = csv.DictReader(csvfile)#返回以字典为元素的数组
+		reader = csv.DictReader(csvfile)  # 返回以字典为元素的数组
 		column = [row for row in reader]
 	
 	for row in column:  # 逐行获取每一个Dict字典
