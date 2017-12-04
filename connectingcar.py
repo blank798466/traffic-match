@@ -84,7 +84,6 @@ def find_stable_matching(rkMP, ckWP):
 def test4():
 	MP = [[2,1],[2],[1],[1,0]]
 	WP = [[1,0],[2,0],[2,3,1]]
-	
 	SM = find_stable_matching(MP,WP)
 	
 if __name__ == "__main__":
