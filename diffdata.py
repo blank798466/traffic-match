@@ -1,4 +1,4 @@
-# coding=utf-8
+#coding=utf-8
 # get the diffdata and the index from the list
 # Input:time_in,time_out,height_in,height_out
 # Output:difftime_in,difftime_out,diffheight_in,diffheight_out,index_in,index_out

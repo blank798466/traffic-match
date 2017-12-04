@@ -1,4 +1,4 @@
-# coding=utf-8
+#coding=utf-8
 # Implementing the Gale-Shaoley algorithm
 # Input:rkMP,ckWP
 # Output:match

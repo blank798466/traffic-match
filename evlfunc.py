@@ -1,4 +1,4 @@
-# coding=utf-8
+#coding=utf-8
 # make two double dimensional arrays into the priority order by the evaluation function
 # Input:dirmatch,time_in,time_out,height_in,height_out
 # Output:rkMP,ckWP
