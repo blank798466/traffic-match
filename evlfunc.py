@@ -5,8 +5,8 @@
 # Author:ZJW
 '''
 评价函数F = k1 * (time - mean_time)/var_time + k2 * height/var_height
-将四个二维数组difftime_in,difftime_out,diffheight_in,diffheight_out转换成
-两个出入站的评价函数大小的二维数组rkdataMP,ckdataWP
+将四个二维数组difftime_in,difftime_out,diffheight_in,diffheight_out
+转换成两个出入站的评价函数大小的二维数组rkdataMP,ckdataWP
 然后转换成两个出入站的优先级顺序的二维数组rkMP,ckWP
 '''
 k1 = 0.5 
