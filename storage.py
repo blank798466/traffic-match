@@ -1,14 +1,20 @@
-#coding=utf-8
+# coding=utf-8
 # save the match into the file
 # Author:ZJW
 import csv
 import csvdata
 
-def savedata(data):
+def savedata(data,cph_in,cph_out):
+    alldata = [[] for i in range(len(data))]
     csvfile = file(u'F:\\研究生之\\20171127\\output.csv','wb')
     writer = csv.writer(csvfile)
     writer.writerow(['rknum','cknum','rkcph','ckcph'])
-    writer.writerows(data)
+    for i in range(len(data)):
+        alldata[i].append(data[i][0])
+        alldata[i].append(data[i][1])
+        alldata[i].append(cph_in[data[i][0]])
+        alldata[i].append(cph_out[data[i][1]])
+    writer.writerows(alldata)
     csvfile.close()
 
 def opencph_in(zzs):  # list  zzs车轴为5
@@ -25,7 +31,7 @@ def opencph_in(zzs):  # list  zzs车轴为5
 def opencph_out(zzs):  # list  zzs车轴为5
 	cph_out = list()  # 出站数据的车牌号列表
 	with open(u'F:\\研究生之\\20171127\\_2015_6_2015_6_7_out.csv','rb') as csvfile:#打开一个文件
-		reader = csv.DictReader(csvfile)  # 返回以字典为元素的数组
+		reader = csv.DictReader(csvfile)#返回以字典为元素的数组
 		column = [row for row in reader]
 	
 	for row in column:  # 逐行获取每一个Dict字典
@@ -36,9 +42,9 @@ def opencph_out(zzs):  # list  zzs车轴为5
 if __name__ == '__main__':
     data = [(1,2,1,2),(2,3,4,5)]
     # savedata(data)
-    cph_in = opencph_in('6')
-    cph_out = opencph_out('6')
+    cph_in = opencph_in('5')
+    cph_out = opencph_out('5')
     for i in cph_out:
        print i.decode('utf-8') 
-    # print cph_in,type(cph_in)
-    # print cph_out,type(cph_out)
+    print cph_in,type(cph_in)
+    print cph_out,type(cph_out)

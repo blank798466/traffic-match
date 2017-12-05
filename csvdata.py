@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 # get the data from .csv to the list
 # Input:_2015_6_2015_6_7_in.csv,_2015_6_2015_6_7_out.csv
 # Output:time_in,time_out,height_in,height_out
@@ -21,7 +21,7 @@ def opencsv_out(zzs):  # list  zzs车轴为5
 	time_out = list()  # 出站数据的时间列表
 	height_out = list()  # 出站数据的车重列表
 	with open(u'F:\\研究生之\\20171127\\_2015_6_2015_6_7_out.csv','rb') as csvfile:#打开一个文件
-		reader = csv.DictReader(csvfile)  # 返回以字典为元素的数组
+		reader = csv.DictReader(csvfile)#返回以字典为元素的数组
 		column = [row for row in reader]
 	
 	for row in column:  # 逐行获取每一个Dict字典
